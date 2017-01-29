@@ -1,6 +1,6 @@
 {
     "name": "CronWeb",
-    "id": "cronweb"
+    "id": "cronweb",
     "packaging_format": 1,
     "requirements": {
         "yunohost": ">> 2.3.15"
