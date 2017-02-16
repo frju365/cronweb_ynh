@@ -1,13 +1,5 @@
-CRONWEB_SOURCE_URL="https://github.com/fisherinnovation/CronWeb/archive/master.zip"
-
 extract_source() {
-  local DESTDIR=$1
-    
-  # retrieve and extract Conweb Zip File
-  rc_tarball="${DESTDIR}/cronweb.zip"
-  sudo wget -q -O "$rc_tarball" "$CRONWEB_SOURCE_URL" \
-    || ynh_die "Unable to download source tarball"
-  sudo unzip "$rc_tarball" "$DESTDIR" \
-    || ynh_die "Unable to extract source tarball"
-  sudo rm "$rc_tarball"
+  sudo rm -rf /var/www/scrumblr  
+  sudo git clone https://github.com/fisherinnovation/CronWeb.git /var/www/$app  \
+    || ynh_die "Unable to download source"
 }
