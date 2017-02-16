@@ -1,12 +1,12 @@
 {
-    "name": "Garradin",
-    "id": "garradin",
+    "name": "CronWeb",
+    "id": "cronweb",
     "packaging_format": 1,
     "requirements": {
         "yunohost": ">> 2.3.15"
     },
     "description": {
-        "fr": "Logiciel libre de gestion d'association"
+        "fr": "Gérer ses cron depuis une interface Web"
     },
     "url": "http://garradin.eu/a-propos/",
     "maintainer": {
@@ -24,8 +24,8 @@
                 "name": "domain",
                 "type": "domain",
                 "ask": {
-                    "en": "Choose a domain for Garradin",
-                    "fr": "Choisissez un domaine pour Garradin"
+                    "en": "Choose a domain for CronWeb",
+                    "fr": "Choisissez un domaine pour CronWeb"
                 },
                 "example": "domain.org"
             },
@@ -33,16 +33,16 @@
                 "name": "path",
                 "type": "path",
                 "ask": {
-                    "en": "Choose a path for Garradin",
-                    "fr": "Choisissez un chemin pour Garradin"
+                    "en": "Choose a path for CronWeb",
+                    "fr": "Choisissez un chemin pour CronWeb"
                 },
-                "example": "/garradin",
-                "default": "/garradin"
+                "example": "/cronweb",
+                "default": "/cronweb"
             },
             {
                 "name": "is_public",
                 "ask": {
-                    "en": "Is it a public Garradin site ?",
+                    "en": "Is it a public CronWeb site ?",
                     "fr": "Est-ce un site public ?"
                 },
                 "choices": ["Yes", "No"],
